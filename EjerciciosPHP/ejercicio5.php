@@ -270,7 +270,7 @@ if($_SERVER["REQUEST_METHOD"]== "POST")
             <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3">
                             <div class="text-bg-dark me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
                                 <div class="card" style="width: 18rem;">
-                                    <img src="..." class="card-img-top" alt="...">
+                                    <img src="../img/escopeta.png" class="card-img-top" alt="...">
                                     <div class="card-body">
                                         <h5 class="card-title">Escopeta</h5>
                                         <form action="ejercicio5.php" method="POST">
@@ -286,11 +286,14 @@ if($_SERVER["REQUEST_METHOD"]== "POST")
                         
                             <div class="text-bg-dark me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
                                 <div class="card" style="width: 18rem;">
-                                    <img src="..." class="card-img-top" alt="...">
+                                    <img src="../img/AK.png" class="card-img-top" alt="...">
                                     <div class="card-body">
-                                        <h5 class="card-title">Card title</h5>
-                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                                        <h5 class="card-title">Rifle de Asalto</h5>
+                                        <form action="ejercicio5.php" method="POST">
+                                            <input type="number" name="ak" id="ak" value="<?php echo $ak->balasRes(); ?>" readonly>
+                                            <br><br><br><button type="submit" name="recargarA" class="btn btn-primary">Recargar</button>
+                                            <button type="submit" name="dispararA" class="btn btn-primary">Disparar</button>
+                                        </form>
                                     </div>
                                 </div>
                             </div>
